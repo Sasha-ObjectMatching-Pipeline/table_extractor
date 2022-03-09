@@ -11,7 +11,7 @@ import sensor_msgs.point_cloud2 as pc2
 import yaml
 from mongodb_store.message_store import MessageStoreProxy
 from nav_msgs.msg import OccupancyGrid
-from edith_msgs.msg import Table, Plane
+from obj_det_ppf_matching_msgs.msg import Table, Plane
 from sensor_msgs.msg import PointCloud2, PointField
 from std_msgs.msg import Header
 from region_growing_by_distance import RegionGrowingByDistanceOnly

@@ -13,7 +13,7 @@ from cv_bridge import CvBridge
 from image_geometry import PinholeCameraModel
 from mongodb_store.message_store import MessageStoreProxy
 from sensor_msgs.msg import CameraInfo
-from edith_msgs.msg import Table, IdAction
+from obj_det_ppf_matching_msgs.msg import Table, IdAction
 from tf_bag import BagTfTransformer
 import os
 import actionlib

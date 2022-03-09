@@ -7,8 +7,8 @@ import smach_ros
 from table_extractor_script import TableExtractor
 from table_viewpoint import TableViewpoint
 #from stare_at_tables.msg import StareAtTablesAction
-from edith_msgs.msg import Table, IdAction, Object, CandidateObject, ObjectMatch, ObjectStateClass
-from edith_msgs.srv import Id, SparseCN, SparseCNRequest, det_and_compare_obj, extract_permanent_objects
+from obj_det_ppf_matching_msgs.msg import Table, IdAction, Object, CandidateObject, ObjectMatch, ObjectStateClass
+from obj_det_ppf_matching_msgs.srv import Id, SparseCN, SparseCNRequest, det_and_compare_obj, extract_permanent_objects
 
 #from elastic_fusion_ros.msg import ElasticFusionAction
 from mongodb_store.message_store import MessageStoreProxy
@@ -346,7 +346,7 @@ def main():
         
 
         smach.StateMachine.add('START_VISUALIZATION',
-                                smach_ros.ServiceState('edith_visualization_service/visualize',Empty),
+                                smach_ros.ServiceState('object_visualization_service/visualize',Empty),
                                 transitions={'succeeded':'USER_INPUT_STATE', 
                                             'preempted':'USER_INPUT_STATE',
                                             'aborted':'USER_INPUT_STATE'})

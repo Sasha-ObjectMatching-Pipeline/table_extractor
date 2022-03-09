@@ -11,7 +11,7 @@ rospy
 roscpp
 sensor_msgs
 actionlib_msgs
-edith_msgs
+obj_det_ppf_matching_msgs
 )
 
 catkin_package(CATKIN_DEPENDS 

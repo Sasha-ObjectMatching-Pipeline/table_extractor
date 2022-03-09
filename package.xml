@@ -17,7 +17,7 @@
   <depend>roscpp</depend>
   <depend>std_msgs</depend>
   <depend>message_generation</depend>
-  <depend>edith_msgs</depend>
+  <depend>obj_det_ppf_matching_msgs</depend>
 
 
 
